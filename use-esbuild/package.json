@@ -1,0 +1,27 @@
+{
+  "name": "use-esbuild",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.js",
+    "push": "clasp push",
+    "open": "clasp open",
+    "deploy": "pnpm build && pnpm push"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.83",
+    "clasp": "^1.0.0",
+    "esbuild": "^0.21.3",
+    "esbuild-gas-plugin": "^0.8.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.4",
+    "lodash": "^4.17.21"
+  }
+}
